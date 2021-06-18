@@ -18,11 +18,7 @@ public class Main extends JPanel {
         
         //Grid
         gr.setColor(new Color(1, 115, 90));
-        for(int x = 0; x < 800; x += cellsize){
-            for(int y = 0; y < 800; y += cellsize){
-                gr.fillRect(x, y, cellsize, cellsize);
-            }
-        }
+        gr.fillRect(0, 0, 800, 800);
         
         //Player
         gr.setColor(new Color(1, 194, 151));
