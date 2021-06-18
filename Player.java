@@ -52,6 +52,16 @@ public class Player {
     }
 
     public void checkCollision(int _x, int _y){
+        if(_x < 0)
+            _x = 800 - game.cellsize;
+        else if(_x >= 800)
+            _x = 0;
+        
+        if(_y < 0)
+            _y = 800 - game.cellsize;
+        else if(_y >= 800)
+            _y = 0;
+
         for(int i = 2; i < size; i++){
             if(pos[i][0] == _x && pos[i][1] == _y){
                 reset();
