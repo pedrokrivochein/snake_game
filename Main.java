@@ -42,8 +42,7 @@ public class Main extends JPanel {
         JFrame frame = new JFrame("Snake");
         Main game = new Main();
 
-        player = new Player();
-        player.game = game;
+        player = new Player(game);
 
         keyListener.player = player;
 

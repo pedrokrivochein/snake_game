@@ -4,7 +4,8 @@ public class Player {
     public int size = 1;
     public int[] dir = new int[]{0, 0};
     
-    public Player(){
+    public Player(Main _game){
+        game = _game;
         size = 1;
         pos[0][0] = 400;
         pos[0][1] = 400;
